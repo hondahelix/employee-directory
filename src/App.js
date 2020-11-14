@@ -2,9 +2,9 @@ import React, {useReducer} from "react";
 import Header from "./components/Header";
 import Table from "./components/Table";
 import SeachBar from "./components/SearchBar"
-import Employees from "./components/employees.json";
+import Pokemons from "./components/pokemons.json";
 function App() {
-  const [employeesState, setEmployees] = useReducer((state, action) =>{
+  const [pokemonsState, setPokemons] = useReducer((state, action) =>{
     switch(action.type){
       case "change":
         return action.input;
@@ -12,20 +12,20 @@ function App() {
           //have to make copy because will not re render if just sorted thats why [...state]
           return [...state].sort((a,b)=>(a.name>b.name) ? 1: -1);
       default: 
-      return Employees;
+      return Pokemons;
     }
-  },Employees);
+  },Pokemons);
 
   function handleChange(value){
-    const matchingEmployees = [];
-    for(var i = 0; i<Employees.length; i++){
-      if(Employees[i].name.includes(value)){
-        matchingEmployees.push(Employees[i]);
+    const matchingPokemons = [];
+    for(var i = 0; i<Pokemons.length; i++){
+      if(Pokemons[i].name.includes(value)){
+        matchingPokemons.push(Pokemons[i]);
       }
     }
-    setEmployees({
+    setPokemons({
       type: "change",
-      input: matchingEmployees
+      input: matchingPokemons
     });
   }
   //console.log(employeesState);
@@ -34,7 +34,7 @@ function App() {
           <Header/>
           <SeachBar handleChange={handleChange}/>
           <br></br>
-          <Table employees = {employeesState} setEmployees = {setEmployees}/>
+          <Table pokemons = {pokemonsState} setPokemons = {setPokemons}/>
     </div>
   );
 }

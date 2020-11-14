@@ -3,60 +3,91 @@
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
         "name": "milotic",
         "id": "350",
-        "type": "water"
+        "type1": "water",
+        "type2": "null"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
         "name": "mew",
         "id": "151",
-        "type": "psychic"
+        "type1": "psychic",
+        "type2": "null"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/384.png",
         "name": "rayquaza",
         "id": "384",
-        "type": "Dragon"
+        "type1": "dragon",
+        "type2": "flying"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
         "name": "mewtwo",
         "id": "150",
-        "type": "psychic"
+        "type1": "psychic",
+        "type2": "null"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/197.png",
         "name": "umbreon",
         "id": "197",
-        "type": "dark"
+        "type1": "dark",
+        "type2": "null"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
         "name": "pikachu",
         "id": "25",
-        "type": "electric"
+        "type1": "electric",
+        "type2": "null"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
         "name": "ho-Oh",
         "id": "250",
-        "type": "fire"
+        "type1": "fire",
+        "type2": "flying"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
         "name": "zekrom",
         "id": "644",
-        "type": "dragon"
+        "type1": "dragon",
+        "type2": "electric"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
         "name": "urshifu",
         "id": "892",
-        "type": "fighting"
+        "type1": "fighting",
+        "type2": "dark"
     },
     {
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
         "name": "zapdos",
         "id": "145",
-        "type": "electric"
+        "type1": "electric",
+        "type2": "flying"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
+        "name": "piplup",
+        "id": "393",
+        "type1": "water",
+        "type2": "null"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+        "name": "psyduck",
+        "id": "54",
+        "type1": "water",
+        "type2": "null"
+    },
+    {
+        "image": "https://img.pokemondb.net/sprites/sun-moon/normal/mimikyu.png",
+        "name": "mimikyu",
+        "id": "778",
+        "type1": "ghost",
+        "type2": "fairy"
     }
 ]
