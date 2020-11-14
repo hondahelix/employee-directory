@@ -28,7 +28,7 @@ function App() {
       input: matchingEmployees
     });
   }
-  console.log(employeesState);
+  //console.log(employeesState);
   return (
     <div className="App">
           <Header/>
