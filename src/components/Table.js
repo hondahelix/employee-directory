@@ -1,7 +1,7 @@
 import React from "react";
 //import { useEmployeeContext } from "../utils/GlobalState";
 
-function Table({employees, handleSort}){
+function Table({employees, setEmployees}){
     // const [state, dispatch] = useEmployeeContext();
     // console.log(state);
     return (
@@ -10,7 +10,7 @@ function Table({employees, handleSort}){
             <thead>
                 <tr>
                 <th scope="col">Image</th>
-                <th scope="col" onClick ={ handleSort} >Name</th>
+                <th scope="col"  ><button onClick ={ () => setEmployees({type: "sort"})}>name</button></th>
                 <th scope="col">Phone</th>
                 <th scope="col">Email</th>
                 </tr>

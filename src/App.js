@@ -10,9 +10,8 @@ function App() {
       case "change":
         return action.input;
       case "sort":
-        console.log("hit sort");
-        console.log(state);
-        return state;
+          //have to make copy because will not re render if just sorted thats why [...state]
+          return [...state].sort((a,b)=>(a.name>b.name) ? 1: -1);
       default: 
       return Employees;
     }
@@ -30,29 +29,13 @@ function App() {
       input: matchingEmployees
     });
   }
-
-  function handleSort(){
-    const sortedEmployees = Employees.sort((a,b)=>{
-        if(a.name>b.name){
-          return 1;
-        }
-        else{
-          return -1;
-        }
-    });
-    //console.log(sortedEmployees);
-    setEmployees({
-      type: "sort",
-      input: sortedEmployees
-    });
-  }
   console.log(employeesState);
   return (
     <div className="App">
           <Header/>
           <SeachBar handleChange={handleChange}/>
           <br></br>
-          <Table employees = {employeesState} handleSort ={handleSort}/>
+          <Table employees = {employeesState} setEmployees = {setEmployees}/>
     </div>
   );
 }
