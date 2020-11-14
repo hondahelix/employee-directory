@@ -8,25 +8,51 @@ function App() {
   const [employeesState, setEmployees] = useReducer((state, action) =>{
     switch(action.type){
       case "change":
-        console.log(action.input);
-        return Employees;
+        return action.input;
+      case "sort":
+        console.log("hit sort");
+        console.log(state);
+        return state;
       default: 
       return Employees;
     }
   },Employees);
 
-  ///make function that loops through changes in employees and sends then to set employess
+  function handleChange(value){
+    const matchingEmployees = [];
+    for(var i = 0; i<Employees.length; i++){
+      if(Employees[i].name.includes(value)){
+        matchingEmployees.push(Employees[i]);
+      }
+    }
+    setEmployees({
+      type: "change",
+      input: matchingEmployees
+    });
+  }
+
+  function handleSort(){
+    const sortedEmployees = Employees.sort((a,b)=>{
+        if(a.name>b.name){
+          return 1;
+        }
+        else{
+          return -1;
+        }
+    });
+    //console.log(sortedEmployees);
+    setEmployees({
+      type: "sort",
+      input: sortedEmployees
+    });
+  }
   console.log(employeesState);
-
-
-
-
   return (
     <div className="App">
           <Header/>
-          <SeachBar setEmployees = {setEmployees}/>
+          <SeachBar handleChange={handleChange}/>
           <br></br>
-          <Table employees = {employeesState}/>
+          <Table employees = {employeesState} handleSort ={handleSort}/>
     </div>
   );
 }
