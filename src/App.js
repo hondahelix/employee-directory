@@ -2,7 +2,6 @@ import React, {useReducer} from "react";
 import Header from "./components/Header";
 import Table from "./components/Table";
 import SeachBar from "./components/SearchBar"
-//import {EmployeeProvider} from "./utils/GlobalState";
 import Employees from "./components/employees.json";
 function App() {
   const [employeesState, setEmployees] = useReducer((state, action) =>{
