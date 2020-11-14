@@ -1,6 +1,9 @@
 import React from "react";
+//import { useEmployeeContext } from "../utils/GlobalState";
 
-function Table(){
+function Table(props){
+    // const [state, dispatch] = useEmployeeContext();
+    // console.log(state);
     return (
     <div className = "container">
         <table className="table">
@@ -13,16 +16,27 @@ function Table(){
                 </tr>
             </thead>
             <tbody>
-
+                {props.employees.map(employee => 
+                <tr key = {employee.name}>
+                <th>{employee.image}</th>
+                <td>{employee.name}</td>
+                <td>{employee.phone}</td>
+                <td>{employee.email}</td>
+                </tr>
+                )}
             </tbody>
       </table>
     </div>
     );
 }
-    // <tr>
-    //   <th scope="row">1</th>
-    //   <td>Mark</td>
-    //   <td>Otto</td>
-    //   <td>@mdo</td>
-    // </tr>
+/* <tbody>
+{props.employees.map(employee => 
+<tr>
+  <th>employee.image</th>
+  <td>employee.name</td>
+  <td>employee.phone</td>
+  <td>employee.email</td>
+</tr>
+)}
+</tbody>  */
 export default Table;
