@@ -1,0 +1,62 @@
+[
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
+        "name": "milotic",
+        "id": "350",
+        "type": "water"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+        "name": "mew",
+        "id": "151",
+        "type": "psychic"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/384.png",
+        "name": "rayquaza",
+        "id": "384",
+        "type": "Dragon"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+        "name": "mewtwo",
+        "id": "150",
+        "type": "psychic"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/197.png",
+        "name": "umbreon",
+        "id": "197",
+        "type": "dark"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "name": "pikachu",
+        "id": "25",
+        "type": "electric"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+        "name": "ho-Oh",
+        "id": "250",
+        "type": "fire"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
+        "name": "zekrom",
+        "id": "644",
+        "type": "dragon"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
+        "name": "urshifu",
+        "id": "892",
+        "type": "fighting"
+    },
+    {
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+        "name": "zapdos",
+        "id": "145",
+        "type": "electric"
+    }
+]
